@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="css/rem.css">
+	<link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<header>
+		<h6>腾讯天气</h6>
+		<div class="tu"></div>
+	</header>
+	<nav>
+		<div class="yi">
+			<h1>太原</h1>
+			<div class="tu"></div>
+		</div>
+		<div class="box">
+			<h6>空气</h6>
+			<h5><!-- 轻度污染 --></h5>
+		</div>
+		<h2>0°</h2>
+		<h3>晴</h3>
+		<h4>湿度 <span>28</span>%</h4>
+		<h5>天冷了，注意保暖~</h5>
+	</nav>
+	<div class="part1">
+		<ul>
+			<li>
+				<div class="yi">
+					<h6>今天</h6>
+					<h5><i class="top">2</i>/<i class="low">-11</i>°C</h5>
+				</div>
+				<div class="er">
+					<h5 class="cloud">晴转多云</h5>
+					<div class="tu now"></div>
+				</div>
+			</li>
+			<li>
+				<div class="yi">
+					<h6>明天</h6>
+					<h5><i class="top1">3</i>/<i class="low1">-13</i>°C</h5>
+				</div>
+				<div class="er">
+					<h5 class="sun">晴</h5>
+					<div class="tu next"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="part2">
+		<ul>
+			<!-- <li>
+				<div class="time">12:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">13:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">14:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">15:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">16:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">17:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">18:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">19:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">20:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">21:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li>
+			<li>
+				<div class="time">22:00</div>
+				<div class="tu"></div>
+				<div class="wendu">-1°</div>
+			</li> -->
+		</ul>
+	</div>
+	<div class="part3">
+		<ul>
+		<li>
+			<span>昨天</span>
+			<span>今天</span>
+			<span>明天</span>
+			<span>后天</span>
+			<span>周五</span>
+			<span>周六</span>
+		</li>
+			<!-- <li>
+				<span>昨天</span>
+				<div class="day">01/15</div>
+				<div class="zhuangkuang1">多云</div>
+				<div class="tu1"></div>
+				<div class="wendu1">1°</div>
+				<div class="wendu2">-5°</div>
+				<div class="tu2"></div>
+				<div class="zhuangkuang2">多云</div>
+				<div class="feng">西北风</div>
+				<div class="ji">3级</div>
+			</li>
+			<li>
+				<span>今天</span>
+				<div class="day">01/15</div>
+				<div class="zhuangkuang1">多云</div>
+				<div class="tu1"></div>
+				<div class="wendu1">1°</div>
+				<div class="wendu2">-5°</div>
+				<div class="tu2"></div>
+				<div class="zhuangkuang2">多云</div>
+				<div class="feng">西北风</div>
+				<div class="ji">3级</div>
+			</li>
+			<li>
+				<span>明天</span>
+				<div class="day">01/15</div>
+				<div class="zhuangkuang1">多云</div>
+				<div class="tu1"></div>
+				<div class="wendu1">1°</div>
+				<div class="wendu2">-5°</div>
+				<div class="tu2"></div>
+				<div class="zhuangkuang2">多云</div>
+				<div class="feng">西北风</div>
+				<div class="ji">3级</div>
+			</li>
+			<li>
+				<span>后天</span>
+				<div class="day">01/15</div>
+				<div class="zhuangkuang1">多云</div>
+				<div class="tu1"></div>
+				<div class="wendu1">1°</div>
+				<div class="wendu2">-5°</div>
+				<div class="tu2"></div>
+				<div class="zhuangkuang2">多云</div>
+				<div class="feng">西北风</div>
+				<div class="ji">3级</div>
+			</li>
+			<li>
+				<span>周五</span>
+				<div class="day">01/15</div>
+				<div class="zhuangkuang1">多云</div>
+				<div class="tu1"></div>
+				<div class="wendu1">1°</div>
+				<div class="wendu2">-5°</div>
+				<div class="tu2"></div>
+				<div class="zhuangkuang2">多云</div>
+				<div class="feng">西北风</div>
+				<div class="ji">3级</div>
+			</li>
+			<li>
+				<span>周六</span>
+				<div class="day">01/15</div>
+				<div class="zhuangkuang1">多云</div>
+				<div class="tu1"></div>
+				<div class="wendu1">1°</div>
+				<div class="wendu2">-5°</div>
+				<div class="tu2"></div>
+				<div class="zhuangkuang2">多云</div>
+				<div class="feng">西北风</div>
+				<div class="ji">3级</div>
+			</li> -->
+		</ul>
+	</div>
+	<div class="bottom">数据来源于中国天气网</div>
+	
+	
+	
+</body>
+</html>
